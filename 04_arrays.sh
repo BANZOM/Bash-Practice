@@ -22,3 +22,10 @@ echo "Elemnts from index 3 to 5 is - ${arr[*]:3:3}"
 # adding elements to array
 arr+=("new" "elements")
 echo "All the modified array - ${arr[*]}"
+
+# key value pair in array
+declare -A brr
+brr=([name]="Aditya" [age]=25 [phone]=100)
+echo "Name is ${brr[name]}"
+echo "Age is ${brr[age]}"
+echo "Phone is ${brr[phone]}"
