@@ -18,3 +18,23 @@ for name in $(ls)
 do
     echo $name
 done
+
+
+# looping into array
+arr=( Hello I am A Array )
+for i in ${arr[*]}
+do
+    echo $i
+done
+
+
+echo ""
+echo "_________________________"
+echo ""
+
+# printing content of file
+FILE="/home/aditya/Development/GitHub/Bash-Practice/LICENSE"
+for i in $(cat $FILE)
+do
+    echo $i
+done
