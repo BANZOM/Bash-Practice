@@ -2,9 +2,15 @@
 
 read -p "Age? " AGE
 
-if [[ AGE -ge 18 ]]
+if [[ $AGE -ge 30 ]]
 then
-	echo "You Can Vote"
+	echo "You Can Do Anything You Want ;)"
+elif [[ $AGE -ge 24 ]]
+then
+	echo "You Should Focus on Building Your Wealth"
+elif [[ $AGE -ge 18 ]]
+then
+	echo "Choose A Right Leader By Vote"
 else
-	echo "You are not Adult"
+	echo "Go and Study Kid"
 fi
