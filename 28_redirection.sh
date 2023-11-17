@@ -3,13 +3,13 @@
 # > --> for overwriting
 # >> --> for appending
 
-if [[ ! -f "dummy.txt" ]]
+# PATH=/home/aditya/.local/bin:/home/aditya/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
+
+path="/home/aditya/Development/GitHub/Bash-Practice"
+
+if [[ ! -f "$path/dummy.txt" ]]
 then
-    touch dummy.txt
+    touch $path/dummy.txt
 fi
-
-echo "Hello World" >> dummy.txt
-echo "Hello World" >> dummy.txt
-echo "Hello World" > dummy.txt
-
-cat dummy.txt
+time=$(date)
+echo "Hello World $time" >> $path/dummy.txt
